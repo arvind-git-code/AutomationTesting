@@ -14,15 +14,16 @@ public class ExplicitilyWait {
 			System.setProperty("webdriver.chrome.driver", "\\Users\\arvin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 			WebDriver driver =new ChromeDriver();
 			driver.manage().window().maximize();
-		
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 			driver.get("https://upsee.in/");
 			//explicity wait is for a specific element and implicitylywait is for whole web page 
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			
-			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("form-field-name")));
-			element.sendKeys("arvind");
+			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Sign up']")));
+//			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Sign up")))
+//			WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[class='dialog-widget-content dialog-lightbox-widget-content animated']")));
+			
+			element.click();
 	        		
 	}
 		

@@ -20,7 +20,7 @@ public class ImplicitWaitConcept {
 		// the above does not worked for me need to resolve
 		
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		
 		driver.findElement(By.xpath("//*[@id=\"elementor-popup-modal-53\"]/div/a")).click();
 		driver.findElement(By.id("form-field-name")).sendKeys("arvind");
