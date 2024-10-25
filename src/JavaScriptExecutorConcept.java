@@ -2,8 +2,8 @@
 	import java.io.IOException;
 	import java.util.concurrent.TimeUnit;
 
-	import org.apache.commons.io.FileUtils;
-	import org.openqa.selenium.By;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 	import org.openqa.selenium.JavascriptExecutor;
 	import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.TakesScreenshot;
@@ -15,7 +15,7 @@
 
 		public static void main(String[] args) throws IOException {
 
-			System.setProperty("webdriver.chrome.driver","\\Users\\arvin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver","src/resource/chromedriver.exe");	
 			 
 			WebDriver driver = new ChromeDriver(); //launch chrome
 			

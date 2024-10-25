@@ -6,7 +6,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class HtmlUnitDriverconcept {
 
 	public static void main(String[] args) {
-		//.setProperty("webdiver.chrome.driver", "\\Users\\arvin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		//.setProperty("webdiver.chrome.driver", "src/resource/chromedriver.exe");
 		//WebDriver driver=new ChromeDriver();
 		//HtmlUnitDriver not available in selenium now
 		//we need to download jar file to use it and add it in dependencies by - go to build path - library- classpath-add external library

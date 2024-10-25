@@ -10,7 +10,7 @@ public class FindElementsConcept {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "\\Users\\arvin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/resource/chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().deleteAllCookies();

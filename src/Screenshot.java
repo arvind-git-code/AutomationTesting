@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
-import org.apache.tomcat.jakartaee.commons.io.FileUtils;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Screenshot {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver", "\\Users\\arvin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/resource/chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

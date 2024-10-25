@@ -15,7 +15,7 @@ public class ReadProperties {
 		System.out.println(prop.getProperty("Name"));
 		System.out.println(prop.getProperty("Location"));
 		
-		System.setProperty("webdiver.chrome.driver", "\\Users\\arvin\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		System.setProperty("webdiver.chrome.driver", "src/resource/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
